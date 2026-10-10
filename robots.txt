@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baqiyatullahislamiccenter12.github.io/Baqiyatullah-Islamic-Center/sitemap.xml
