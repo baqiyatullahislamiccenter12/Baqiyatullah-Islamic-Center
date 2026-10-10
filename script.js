@@ -33,6 +33,7 @@ function setLanguage(lang) {
     button.setAttribute("aria-pressed", String(selected));
   });
   if (typeof window.updatePrayerTimesLanguage === "function") window.updatePrayerTimesLanguage(lang);
+  if (typeof window.updateEventsLanguage === "function") window.updateEventsLanguage(lang);
   document.title = lang === "ur" ? "امام بارگاہ بقیۃ اللہ اسلامک سینٹر | ملاگا" : lang === "en" ? "Imam Bargah Baqiyatullah Islamic Center | Málaga" : "Imam Bargah Baqiyatullah Islamic Center | Málaga";
   try { localStorage.setItem("baqiyatullah-language", lang); } catch (_) {}
 }
