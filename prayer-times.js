@@ -24,7 +24,7 @@
       grid.innerHTML = order.map(name => {
         const raw = timings[name];
         if (!raw) throw new Error("Missing " + name);
-        const time = raw.match(/\\d{1,2}:\\d{2}/)?.[0];
+        const time = raw.match(/\d{1,2}:\d{2}/)?.[0];
         if (!time) throw new Error("Invalid " + name);
         return '<article class="prayer-card"><span>' + (labels[lang]?.[name] || labels.es[name]) + '</span><strong>' + time + '</strong></article>';
       }).join("");
