@@ -220,3 +220,5 @@ a:focus-visible,button:focus-visible{outline:3px solid #d8ccb0;outline-offset:4p
 .update-card-meta{font-size:12px;font-weight:600;letter-spacing:.03em;color:var(--muted)}
 [dir="rtl"] .update-card{border-left:1px solid var(--line);border-right:3px solid var(--gold)}
 @media(max-width:640px){.updates-list{grid-template-columns:1fr}.update-card{padding:18px}}
+
+.update-empty[hidden],.prayer-error[hidden]{display:none!important}
