@@ -106,14 +106,14 @@
     <section class="updates-section" id="events" aria-labelledby="events-title">
       <div class="section-wrap">
         <div class="section-heading"><div><p class="section-label" data-i18n="eventsLabel">AGENDA DE LA COMUNIDAD</p><h2 id="events-title" data-i18n="eventsTitle">Próximos eventos</h2></div><p class="heading-note" data-i18n="eventsIntro">Aquí publicaremos las actividades confirmadas del centro.</p></div>
-        <div class="update-empty"><span class="update-icon" aria-hidden="true">✧</span><div><h3 data-i18n="eventsEmptyTitle">Todavía no hay eventos publicados</h3><p data-i18n="eventsEmptyText">Vuelve a consultar esta sección para conocer las próximas actividades confirmadas.</p></div></div>
+        <div class="updates-list" id="eventsList"></div><div class="update-empty" id="eventsEmpty"><span class="update-icon" aria-hidden="true">✧</span><div><h3 data-i18n="eventsEmptyTitle">Todavía no hay eventos publicados</h3><p data-i18n="eventsEmptyText">Vuelve a consultar esta sección para conocer las próximas actividades confirmadas.</p></div></div>
       </div>
     </section>
 
     <section class="announcements-section" id="announcements" aria-labelledby="announcements-title">
       <div class="section-wrap">
         <div class="section-heading"><div><p class="section-label" data-i18n="announcementsLabel">INFORMACIÓN DEL CENTRO</p><h2 id="announcements-title" data-i18n="announcementsTitle">Avisos y anuncios</h2></div><p class="heading-note" data-i18n="announcementsIntro">Información importante para la comunidad.</p></div>
-        <div class="update-empty"><span class="update-icon" aria-hidden="true">◉</span><div><h3 data-i18n="announcementsEmptyTitle">No hay avisos publicados por ahora</h3><p data-i18n="announcementsEmptyText">Los avisos oficiales se mostrarán aquí cuando el centro los confirme.</p></div></div>
+        <div class="updates-list" id="announcementsList"></div><div class="update-empty" id="announcementsEmpty"><span class="update-icon" aria-hidden="true">◉</span><div><h3 data-i18n="announcementsEmptyTitle">No hay avisos publicados por ahora</h3><p data-i18n="announcementsEmptyText">Los avisos oficiales se mostrarán aquí cuando el centro los confirme.</p></div></div>
       </div>
     </section>
 
@@ -128,6 +128,7 @@
   </main>
   <footer class="site-footer"><a class="footer-brand" href="#home">BAQIYATULLAH <span>IMAM BARGAH ISLAMIC CENTER</span></a><div class="footer-links"><a href="#about" data-i18n="navAbout">Nosotros</a><a href="#purpose" data-i18n="navPurpose">Objetivos</a><a href="#documents" data-i18n="navDocuments">Documentación</a><a href="#contact" data-i18n="navContact">Contacto</a></div><div class="social-links" aria-label="Redes sociales" data-i18n-attr="aria-label:socialLabel"><a href="https://www.facebook.com/share/1e2wxu59ux/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/imambarghabaqiyatullah?obrf=MXI2YTdkNHBmN3Q4OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@imambargahbaqiyatullahmalaga14" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube <span aria-hidden="true">↗</span></a></div><p>© <span id="year">2026</span> Imam Bargah Baqiyatullah Islamic Center. <span data-i18n="footerRights">Todos los derechos reservados.</span></p><p class="footer-note" data-i18n="footerNote">Fe · Conocimiento · Comunidad · Servicio</p></footer>
   <script src="./script.js" defer></script>
+  <script src="./events.js" defer></script>
   <script src="./prayer-times.js" defer></script>
 </body>
 </html>
