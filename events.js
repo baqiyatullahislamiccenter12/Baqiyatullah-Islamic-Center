@@ -69,5 +69,19 @@
       window.baqiyatullahContent = content;
       refresh(document.documentElement.lang || "es");
     })
-    .catch(error => console.error("Events and announcements could not be loaded; showing empty states.", error));
+    .catch(error => {
+      console.error("Events and announcements could not be loaded.", error);
+      const lang = document.documentElement.lang || "es";
+      const messages = {
+        es: "No se pudo cargar la información. Inténtalo de nuevo más tarde.",
+        en: "The information could not be loaded. Please try again later.",
+        ur: "معلومات لوڈ نہیں ہو سکیں۔ براہِ کرم کچھ دیر بعد دوبارہ کوشش کریں۔"
+      };
+      ["eventsEmpty", "announcementsEmpty"].forEach(id => {
+        const paragraph = document.querySelector("#" + id + " p[data-i18n]");
+        if (!paragraph) return;
+        paragraph.dataset.i18n = "contentLoadError";
+        paragraph.textContent = messages[lang] || messages.es;
+      });
+    });
 })();
