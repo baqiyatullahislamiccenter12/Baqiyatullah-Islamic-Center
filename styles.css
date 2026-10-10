@@ -143,3 +143,50 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline
 @media(max-width:780px){
  [dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(34,57,49,.86),rgba(43,71,62,.65)),linear-gradient(0deg,rgba(34,57,49,.52),transparent 55%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
 }
+
+
+/* Extra-light, low-glare palette refinement */
+:root{
+  --green:#547267;
+  --green-deep:#40594f;
+  --green-soft:#f1f2ed;
+  --gold:#b6a47f;
+  --gold-light:#d8ccb0;
+  --ink:#414f49;
+  --muted:#727b75;
+  --paper:#faf9f5;
+  --white:#fffefa;
+  --line:#ebe9e1;
+  --shadow:0 8px 24px rgba(55,70,61,.045);
+}
+.site-header,.site-footer{background:#40594f}
+.hero{
+ background-image:
+ linear-gradient(90deg,rgba(54,75,66,.76) 0%,rgba(64,89,79,.55) 42%,rgba(64,89,79,.12) 78%,rgba(54,75,66,.08) 100%),
+ linear-gradient(0deg,rgba(54,75,66,.38),transparent 38%),
+ url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=2200&q=85");
+}
+.purpose-section,.announcements-section,.documents-section{background:#f4f4ef}
+.purpose-card,.document-placeholder,.contact-card{background:#fffefa}
+.quote-card,.community-panel{background:#547267}
+.prayer-section{background:#f1f2ed;color:#414f49}
+.prayer-section .section-label{color:#9c8963}
+.prayer-section .section-heading h2{color:#414f49}
+.prayer-section .heading-note,.prayer-meta,.prayer-card span,.prayer-note{color:#727b75}
+.prayer-method{color:#9c8963}
+.prayer-card{background:#fffefa;border:1px solid #e8e8e0}
+.prayer-card strong{color:#8d7b57}
+.prayer-error{color:#875e45}
+.update-empty{box-shadow:0 5px 16px rgba(55,70,61,.035);border-left-color:#b6a47f}
+.update-icon{background:#f0ede4;color:#547267}
+.social-links a{color:#d8ccb0}
+@media(max-width:780px){
+ .hero{background-image:
+ linear-gradient(90deg,rgba(54,75,66,.76),rgba(64,89,79,.52)),
+ linear-gradient(0deg,rgba(54,75,66,.38),transparent 55%),
+ url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
+}
+[dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(54,75,66,.76) 0%,rgba(64,89,79,.55) 42%,rgba(64,89,79,.12) 78%,rgba(54,75,66,.08) 100%),linear-gradient(0deg,rgba(54,75,66,.38),transparent 38%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=2200&q=85")}
+@media(max-width:780px){
+ [dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(54,75,66,.76),rgba(64,89,79,.52)),linear-gradient(0deg,rgba(54,75,66,.38),transparent 55%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
+}
