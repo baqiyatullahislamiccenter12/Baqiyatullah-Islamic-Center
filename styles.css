@@ -97,3 +97,49 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline
 .social-links a{display:inline-flex;align-items:center;gap:5px;color:var(--gold-light);font-size:11px;font-weight:600;transition:color .2s}
 .social-links a:hover{color:#fffaf0}
 .social-links a span{font-size:13px}
+
+
+/* Softer, easier-on-the-eyes palette */
+:root{
+  --green:#35594f;
+  --green-deep:#2b473f;
+  --green-soft:#edf0e9;
+  --gold:#aa9468;
+  --gold-light:#d1c19a;
+  --ink:#344740;
+  --muted:#69756e;
+  --paper:#f7f6f0;
+  --white:#fcfbf7;
+  --line:#e5e4dc;
+  --shadow:0 12px 32px rgba(42,62,53,.07);
+}
+.site-header,.site-footer{background:#2b473f}
+.hero{
+ background-image:
+ linear-gradient(90deg,rgba(34,57,49,.86) 0%,rgba(43,71,62,.68) 42%,rgba(43,71,62,.18) 78%,rgba(34,57,49,.12) 100%),
+ linear-gradient(0deg,rgba(34,57,49,.52),transparent 38%),
+ url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=2200&q=85");
+}
+.purpose-section,.announcements-section,.documents-section{background:#f0f1ea}
+.purpose-card,.document-placeholder,.contact-card{background:#fcfbf7}
+.quote-card,.community-panel{background:#35594f}
+.prayer-section{background:#edf0e9;color:#344740}
+.prayer-section .section-label{color:#8e7952}
+.prayer-section .section-heading h2{color:#344740}
+.prayer-section .heading-note,.prayer-meta,.prayer-card span,.prayer-note{color:#69756e}
+.prayer-method{color:#8e7952}
+.prayer-card{background:#fcfbf7;border:1px solid #e2e4db}
+.prayer-card strong{color:#8e7952}
+.prayer-error{color:#875e45}
+.update-empty{box-shadow:0 8px 22px rgba(42,62,53,.045);border-left-color:#aa9468}
+.update-icon{background:#e9e5d8;color:#35594f}
+@media(max-width:780px){
+ .hero{background-image:
+ linear-gradient(90deg,rgba(34,57,49,.86),rgba(43,71,62,.65)),
+ linear-gradient(0deg,rgba(34,57,49,.52),transparent 55%),
+ url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
+}
+[dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(34,57,49,.86) 0%,rgba(43,71,62,.68) 42%,rgba(43,71,62,.18) 78%,rgba(34,57,49,.12) 100%),linear-gradient(0deg,rgba(34,57,49,.52),transparent 38%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=2200&q=85")}
+@media(max-width:780px){
+ [dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(34,57,49,.86),rgba(43,71,62,.65)),linear-gradient(0deg,rgba(34,57,49,.52),transparent 55%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
+}
