@@ -10,7 +10,9 @@
   };
   const renderCards = (items, list, empty, lang, type) => {
     if (!list || !empty) return;
-    const today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Madrid" });
+    const todayParts = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", year:"numeric", month:"2-digit", day:"2-digit" }).formatToParts(new Date());
+    const todayPart = type => todayParts.find(part => part.type === type)?.value;
+    const today = todayPart("year") + "-" + todayPart("month") + "-" + todayPart("day");
     const visibleItems = (Array.isArray(items) ? items : []).filter(item => {
       if (!item || !item.title) return false;
       if (type === "events" && item.date && item.date < today) return false;
