@@ -231,13 +231,13 @@ a:focus-visible,button:focus-visible{outline:3px solid #d8ccb0;outline-offset:4p
 .main-nav a{font-size:12px;line-height:1.4}
 @media(max-width:780px){
   .brand-copy strong{font-size:10px}
-  .brand-copy small{font-size:8px}
+  .brand-copy small{font-size:9px}
   .brand-copy .brand-location{font-size:8px}
   .main-nav a{font-size:12px}
 }
 @media(max-width:380px){
   .brand-copy strong{font-size:9px}
-  .brand-copy small{font-size:7px}
-  .brand-copy .brand-location{font-size:7px}
+  .brand-copy small{font-size:8px}
+  .brand-copy .brand-location{font-size:8px}
   .main-nav a{font-size:11px}
 }
