@@ -241,3 +241,25 @@ a:focus-visible,button:focus-visible{outline:3px solid #d8ccb0;outline-offset:4p
   .brand-copy .brand-location{font-size:8px}
   .main-nav a{font-size:11px}
 }
+
+
+/* Accessibility fix: keep the full brand lockup readable at every viewport. */
+.brand-copy small{font-size:11px;letter-spacing:.06em}
+.brand-copy .brand-location{font-size:11px;letter-spacing:.08em}
+@media(max-width:780px){
+  .brand-copy small{font-size:11px;letter-spacing:.025em}
+  .brand-copy .brand-location{font-size:11px;letter-spacing:.04em}
+}
+@media(max-width:480px){
+  .brand-copy small{font-size:10px;letter-spacing:0}
+  .brand-copy .brand-location{font-size:10px;letter-spacing:0}
+  .brand-copy{line-height:1.15}
+}
+.prayer-retry{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-top:10px;padding:7px 13px;border:1px solid var(--green);
+  border-radius:3px;background:var(--white);color:var(--green);
+  font:inherit;font-size:12px;font-weight:700;cursor:pointer
+}
+.prayer-retry:hover{background:var(--green-soft)}
+.prayer-retry:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
