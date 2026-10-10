@@ -190,3 +190,23 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline
 @media(max-width:780px){
  [dir="rtl"] .hero{background-image:linear-gradient(270deg,rgba(54,75,66,.76),rgba(64,89,79,.52)),linear-gradient(0deg,rgba(54,75,66,.38),transparent 55%),url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80")}
 }
+
+
+/* Accessibility and readability refinements */
+.brand-copy small{font-size:11px;letter-spacing:.07em}
+.brand-copy .brand-location{font-size:10px;letter-spacing:.12em}
+.main-nav{font-size:12px}
+.language-switch button{min-width:36px;min-height:44px;padding:8px 4px}
+.menu-toggle{min-width:44px;min-height:44px;align-items:center;justify-content:center}
+a:focus-visible,button:focus-visible{outline:3px solid #d8ccb0;outline-offset:4px;border-radius:3px}
+.skip-link:focus-visible{left:8px;z-index:100;background:#fffefa;color:#263d34;outline:3px solid #b6a47f;outline-offset:3px}
+@media(max-width:780px){
+  .brand-copy small{font-size:10px}
+  .brand-copy .brand-location{font-size:9px}
+  .main-nav a{min-height:44px;display:flex;align-items:center}
+  .language-switch{gap:5px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
