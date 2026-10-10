@@ -21,7 +21,7 @@
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" data-menu-label="open" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav" id="mainNav" aria-label="Main navigation" data-nav-label="true">
-      <a class="active" href="#home" data-i18n="navHome">Inicio</a><a href="#about" data-i18n="navAbout">Nosotros</a><a href="#purpose" data-i18n="navPurpose">Objetivos</a><a href="#community" data-i18n="navCommunity">Comunidad</a><a href="#documents" data-i18n="navDocuments">Documentación</a><a href="#contact" data-i18n="navContact">Contacto</a>
+      <a class="active" href="#home" data-i18n="navHome">Inicio</a><a href="#prayer-times" data-i18n="navPrayer">Oración</a><a href="#about" data-i18n="navAbout">Nosotros</a><a href="#purpose" data-i18n="navPurpose">Objetivos</a><a href="#community" data-i18n="navCommunity">Comunidad</a><a href="#documents" data-i18n="navDocuments">Documentación</a><a href="#contact" data-i18n="navContact">Contacto</a>
     </nav>
     <div class="language-switch" aria-label="Choose language" data-language-label="true">
       <button type="button" data-lang="es" class="selected" aria-pressed="true">ES</button><span>|</span><button type="button" data-lang="en" aria-pressed="false">EN</button><span>|</span><button type="button" data-lang="ur" lang="ur" aria-pressed="false">اردو</button>
@@ -40,6 +40,19 @@
       </div>
       <div class="hero-ornament" aria-hidden="true"><span>بَقِيَّةُ الله</span><i></i><small>FE · CONOCIMIENTO · COMUNIDAD</small></div>
       <div class="hero-bottom"><span data-i18n="heroBottom">Fundado el 28 de junio de 2026</span><span class="scroll-cue" aria-hidden="true">↓</span><span>MÁLAGA, ESPAÑA</span></div>
+    </section>
+
+
+    <section class="prayer-section" id="prayer-times" aria-labelledby="prayer-title">
+      <div class="section-wrap">
+        <div class="section-heading prayer-heading"><div><p class="section-label" data-i18n="prayerLabel">HORARIOS DE ORACIÓN</p><h2 id="prayer-title" data-i18n="prayerTitle">Horarios de oración de hoy</h2></div><p class="heading-note" data-i18n="prayerIntro">Málaga · Método Ja‘fari / Shia Ithna-Ashari</p></div>
+        <div class="prayer-meta"><span id="prayerDate" data-i18n="prayerLoading">Cargando horarios…</span><span class="prayer-method" data-i18n="prayerMethod">Cálculo Ja‘fari · Málaga</span></div>
+        <div class="prayer-grid" id="prayerGrid" aria-live="polite">
+          <article class="prayer-card"><span data-i18n="fajr">Fajr</span><strong>—:—</strong></article><article class="prayer-card"><span data-i18n="sunrise">Salida del sol</span><strong>—:—</strong></article><article class="prayer-card"><span data-i18n="dhuhr">Dhuhr</span><strong>—:—</strong></article><article class="prayer-card"><span data-i18n="asr">Asr</span><strong>—:—</strong></article><article class="prayer-card"><span data-i18n="maghrib">Maghrib</span><strong>—:—</strong></article><article class="prayer-card"><span data-i18n="isha">Isha</span><strong>—:—</strong></article>
+        </div>
+        <p class="prayer-note" data-i18n="prayerDisclaimer">Horarios calculados por API para Málaga con método Ja‘fari (0). Pueden diferir de los de una autoridad religiosa local; confirme el horario con el centro.</p>
+        <p class="prayer-error" id="prayerError" hidden data-i18n="prayerError">No se han podido cargar los horarios. Inténtelo de nuevo más tarde.</p>
+      </div>
     </section>
 
     <section class="intro section-wrap" id="about">
@@ -88,5 +101,6 @@
   </main>
   <footer class="site-footer"><a class="footer-brand" href="#home">BAQIYATULLAH <span>IMAM BARGAH ISLAMIC CENTER</span></a><div class="footer-links"><a href="#about" data-i18n="navAbout">Nosotros</a><a href="#purpose" data-i18n="navPurpose">Objetivos</a><a href="#documents" data-i18n="navDocuments">Documentación</a><a href="#contact" data-i18n="navContact">Contacto</a></div><p>© <span id="year">2026</span> Imam Bargah Baqiyatullah Islamic Center. <span data-i18n="footerRights">Todos los derechos reservados.</span></p><p class="footer-note" data-i18n="footerNote">Fe · Conocimiento · Comunidad · Servicio</p></footer>
   <script src="./script.js" defer></script>
+  <script src="./prayer-times.js" defer></script>
 </body>
 </html>
