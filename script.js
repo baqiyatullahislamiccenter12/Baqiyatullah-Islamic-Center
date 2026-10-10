@@ -41,6 +41,9 @@ langButtons.forEach(button => button.addEventListener("click", () => {
   setLanguage(button.dataset.lang);
   mainNav.classList.remove("open");
   menuToggle.setAttribute("aria-expanded", "false");
+  const currentLang = document.documentElement.lang || "es";
+  const labels = {es:"Abrir navegación",en:"Open navigation",ur:"نیویگیشن کھولیں"};
+  menuToggle.setAttribute("aria-label", labels[currentLang] || labels.es);
 }));
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
@@ -54,6 +57,9 @@ menuToggle.addEventListener("click", () => {
 mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
   mainNav.classList.remove("open");
   menuToggle.setAttribute("aria-expanded", "false");
+  const currentLang = document.documentElement.lang || "es";
+  const labels = {es:"Abrir navegación",en:"Open navigation",ur:"نیویگیشن کھولیں"};
+  menuToggle.setAttribute("aria-label", labels[currentLang] || labels.es);
 }));
 const sections = [...document.querySelectorAll("main section[id]")];
 if ("IntersectionObserver" in window) {
